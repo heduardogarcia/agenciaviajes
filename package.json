@@ -1,0 +1,25 @@
+{
+  "name": "intronodejs",
+  "version": "1.0.0",
+  "description": "Aprendieno Node js Express y Sequelieze",
+  "main": "index.js",
+  "scripts": {
+  
+    "dev": "nodemon server",
+    "start": "node server"
+
+  },
+  "author": "Eduardo Garcia Camacho",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.13",
+    "pug": "^3.0.2",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}

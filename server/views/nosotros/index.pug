@@ -1,0 +1,35 @@
+extends ../layout/index 
+block contenido
+    //- h1 Nosotros desde el pug 
+    //- h1= pagina
+    //- h1 #{pagina}
+    main.container.mt-5
+        .row 
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="Imagen de Nosotros" class="img-fluid") 
+            .col-md-7 
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero urna, ullamcorper quis enim eget, faucibus pharetra diam. Curabitur venenatis elementum erat                 vel ullamcorper. Proin sit amet accumsan velit. Fusce quam nisi, sagittis condimentum
+                volutpat quis, laoreet nec sapien. Duis scelerisque quis dui scelerisque fermentum. 
+                Aliquam dui risus, vulputate sed vestibulum id, dapibus non velit. Donec interdum fringilla laoreet.
+                p Nullam fermentum, dui sit amet pellentesque fermentum, dui eros tempus dolor, sit amet suscipit urna 
+                quam et ipsum. Pellentesque condimentum diam at sapien auctor laoreet. Vestibulum tempus ex nec sagittis 
+                fringilla Praesent iaculis vestibulum leo, sed cursus neque sollicitudin at. Donec arcu ipsum, bibendum nec neque eu, 
+                p Mauris dictum quam nec eleifend egestas. Nam eu arcu aliquam lacus sagittis auctor sit amet sit amet lacus. 
+                Nam eu fermentum ipsum. Integer fermentum nulla ut justo condimentum lobortis. Aenean laoreet porttitor feugiat.
+    .listado-iconos 
+        .container.mt-5.py-5.text-center 
+            .row    
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="Seguridad" class='img-fluid mb-4')
+                    h2.mb-4 Seguridad 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla, dolores ut ullam temporibus soluta nihil blanditiis
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="Destinos" class='img-fluid mb-4')
+                    h2.mb-4 Mejores Destinos 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla, dolores ut ullam temporibus soluta nihil blanditiis
+                
+                .col-md-4 
+                    img(src="img/icono_precios.svg", alt="Precios" class='img-fluid mb-4')
+                    h2.mb-4 Precios 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla, dolores ut ullam temporibus soluta nihil blanditiis

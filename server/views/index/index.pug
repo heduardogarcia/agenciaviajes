@@ -1,0 +1,59 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro 
+        em aventura
+block contenido
+    main.container.mt-5 
+                h2.text-center.mb-5 Sobre Nosotros 
+                .row.mb-5 
+                    .col-md-6 
+                        p 
+                        |Quis nesciunt non voluptate tempora nisi ducimus consectetur numquam quasi
+                        |et repellendus ipsa,laudantium necessitatibus, atque nobis eveniet praesentium eligendi
+                        |et repellendus ipsa,laudantium necessitatibus, atque nobis eveniet praesentium eligendi
+                        |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, amet! 
+                        |Quis nesciunt non voluptate tempora nisi ducimus consectetur numquam quasi
+                        p 
+                        |Quis nesciunt non voluptate tempora nisi ducimus consectetur numquam quasi
+                        |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, amet! 
+                        |Quis nesciunt non voluptate tempora nisi ducimus consectetur numquam quasi
+                        |et repellendus ipsa,laudantium necessitatibus, atque nobis eveniet praesentium eligendi
+                        |et repellendus ipsa,laudantium necessitatibus, atque nobis eveniet praesentium eligendi
+                    .col-md-6 
+                         img(src="/img/inicio_nosotros.jpg", alt="alt", class="img-fluid")
+
+                h2.text-center.mb-5 Próximos Viajes
+                include ../layout/partials/viajes
+                
+                //- .row.proximos-viajes 
+                //-     each viaje in viajes
+                //-         .col-md-6.col-lg-4.mb-4     
+                //-             .card 
+                //-                 img(src=`img/destinos_${viaje.imagen}.jpg` class="img-fluid" )
+                //-                 .card-body 
+                //-                     h2=viaje.titulo
+                //-                     p 
+                //-                         i.fas.fa-calendar-alt
+                //-                         |  #{viaje.fecha_ida} - #{viaje.fecha_vuelta}
+                //-                     p 
+                //-                         i.fas.fa-dollar-sign
+                //-                         |  #{viaje.precio}
+                //-                     p= viaje.descripcion.substr(0,100)
+                //-                     a(href=`viajes/${viaje.id}`,class="btn btn-success btn-block") Mas Información
+                        
+    .descuento 
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de marzo 2019 - 28 de marzo de 2019
+                        p.precio $2,500 USD
+    
+    .container 
+        h2.text-center.my-5 Testimoniales
+        include ../layout/partials/testimoniales
+
+
